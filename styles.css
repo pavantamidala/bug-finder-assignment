@@ -82,3 +82,20 @@ textarea{
     font-size: 20px;
     font-weight: 600;
 }
+@media screen and (max-width:915px){
+    #issue-btn{
+       position: absolute;
+    width: 4rem;
+    height: 2rem;
+    font-size: 8px;
+    right: 30px;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    top:23px;
+    }
+    .issues{
+        position: relative;
+        top:60px;
+    }
+}
