@@ -10,7 +10,7 @@ let submitIssueBtn = document.getElementById('create-new-issue')
 
 submitIssueBtn.addEventListener('click', function (e) {
     let div = document.createElement('div')
-    let h2 = document.createElement('h2')
+    let p2 = document.createElement('p')
     let p = document.createElement('p')
     let span = document.createElement('span')
   let division = document.createElement('div')
@@ -19,10 +19,11 @@ submitIssueBtn.addEventListener('click', function (e) {
     p.className = "content"
     span.className = "user"
     let date = new Date()
-   h2.innerText = inputs[0].value
+    p2.className = "bug-para"
+   p2.innerText = inputs[0].value
     span.innerText = "-by "+inputs[1].value
    p.innerText = textarea
-   div.appendChild(h2)
+   div.appendChild(p2)
    div.appendChild(p)
    div.appendChild(span)
 division.className = "date"
